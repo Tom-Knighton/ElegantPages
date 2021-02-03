@@ -18,9 +18,9 @@ struct ElegantPagesView<Stack>: View, ElegantPagesManagerDirectAccess where Stac
     private var minDragDistance: CGFloat {
         switch pageTurnType {
         case .regular(let delta):
-            return delta*screen.width / 5
+            return delta*screen.width / 2
         case .earlyCutoff(let config):
-            return config.pageTurnCutOff / 5
+            return config.pageTurnCutOff / 2
         }
     }
 
