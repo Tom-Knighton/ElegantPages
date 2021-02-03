@@ -51,7 +51,7 @@ extension PageTurnTypeDirectAccess {
     var pageTurnAnimation: Animation {
         switch pageTurnType {
         case .regular:
-            return .easeInOut
+            return .easeInOut(duration: 0.215)
         case let .earlyCutoff(config):
             return config.pageTurnAnimation
         }
